@@ -112,21 +112,19 @@ function addStickyBar() {
   var body = $("body");
   var html = `
 		<div style="width: 500px;height: 30px;position: fixed;right: 0;top: 0;z-index: 9999;">
-			<div style="height: 30px;width: 100%;">
-				<button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
-			text-align: center;line-height: 30px;outline: none;margin-right:15px;" onclick="showAnswer()">
-					显示答案
-				</button>
-				<button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
-			text-align: center;line-height: 30px;outline: none;margin-right:15px;" onclick="fillBlanks()">自动填空</button>
-				<input type="text" id="speed-input" placeholder="倍速" style="width: 50px;">
-				<button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
-      text-align: center;line-height: 30px;outline: none;" onclick="handlerSpeedClick()">添加倍速</button>
-        <button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
-			text-align: center;line-height: 30px;outline: none;" onclick="autoNextVideo()">自动换视频</button>
-			</div>
-			<p>Author:Mustard</p>
-		</div>
+            <div style="height: 30px;width: 100%;">
+                <button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
+        text-align: center;line-height: 30px;outline: none;margin-right:15px;" onclick="showAnswer()">
+                    显示答案
+                </button>
+                <button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
+        text-align: center;line-height: 30px;outline: none;margin-right:15px;" onclick="fillBlanks()">自动填空</button>
+                <input type="number" max="16" min="1" value="2" id="speed-input" placeholder="倍速" style="width: 45px;">
+                <button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;text-align: center;line-height: 30px;outline: none;" onclick="handlerSpeedClick()">添加倍速</button>
+                <button style="height: 30px;padding: 0 10px;border: none;border-radius: 2px;color: #fff;background-color: #ea5947;
+        text-align: center;line-height: 30px;outline: none;" onclick="autoNextVideo()">自动换视频</button>
+            </div>
+	</div>
 	`;
   body.prepend($(html));
 }
