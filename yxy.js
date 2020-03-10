@@ -132,7 +132,7 @@ function addStickyBar() {
 }
 
 function handlerSpeedClick() {
-  var spp = $("speed-input").val();
+  var spp = document.getElementById("speed-input").value;
   quickVideo(spp);
 }
 
